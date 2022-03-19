@@ -1,4 +1,4 @@
-public class Student extends test {
+public class Student extends Human {
     public Student(double weight, double height, String name) {
         super(weight, height, name);
     }

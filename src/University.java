@@ -9,6 +9,6 @@ public class University extends Student{
 
     @Override
     public String toString() {
-        return String.format("응애 나는 대학생이얌");
+        return name;
     }
 }

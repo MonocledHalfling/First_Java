@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class test {
+public class Human {
     private double weight;
     private double height;
-    private String name;
+    public String name;
 
-    public test(double weight, double height, String name) {
+    public Human(double weight, double height, String name) {
         this.weight = weight;
         this.height = height;
         this.name = name;
@@ -16,11 +16,15 @@ public class test {
         System.out.println(String.format("키는 %f, 몸무게는 %f, 이름은 %s", height, weight, name));
     }
 
-    private final List<String> values0 = new ArrayList<>();
-
-    public void filterUniversity() {
-        if (this instanceof University)
-            values0.add(this.name);
+    public ArrayList<University> filterUniversity(ArrayList<Human> hmList) {
+        ArrayList<University> unis = new ArrayList<>();
+        for (Human i: hmList){
+            if (i instanceof University) {
+                University uni = (University) i;
+                unis.add(uni);
+            }
+        }
+        return unis;
     }
 
     @Override

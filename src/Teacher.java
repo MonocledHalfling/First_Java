@@ -1,4 +1,4 @@
-public class Teacher extends test {
+public class Teacher extends Human {
     private double cls;
 
     public Teacher(double weight, double height, String name) {
